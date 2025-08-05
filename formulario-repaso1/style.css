@@ -1,0 +1,154 @@
+:root {
+  --bg-body: #1a1b26;
+  --bg-panel: #24283b;
+  --bg-input: #1a1b26;
+  --text-main: #c0caf5;
+  --text-accent: #7aa2f7;
+  --text-error: #f7768e;
+  --text-success: #9ece6a;
+  --text-warning: #e0af68;
+  --border-input: #414868;
+  --btn-bg: #7aa2f7;
+  --btn-bg-hover: #5686e0;
+  --btn-text: #1a1b26;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-body);
+  font-family: 'Courier New', Courier, monospace;
+
+  & .cabecera {
+    background: var(--bg-panel);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-accent);
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+
+  & .cuerpo {
+    background: var(--bg-body);
+    min-height: calc(100vh - 190px);
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 1.7rem;
+    color: var(--text-main);
+  }
+
+  & .pie {
+    background: var(--bg-panel);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--text-accent);
+  }
+
+  & .titulo-base {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-accent);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  & .formulario-1 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--bg-panel);
+    box-shadow: 0 0 15px var(--shadow);
+
+    & .containInput {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    & .msj-error {
+      color: var(--text-error);
+      font-size: 0.9rem;
+    }
+
+    & .msj-success {
+      color: var(--text-success);
+      font-size: 0.9rem;
+    }
+
+    & .msj-warning {
+      color: var(--text-warning);
+      font-size: 0.9rem;
+    }
+
+    & label {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: var(--text-main);
+    }
+
+    & .input-text {
+      width: 100%;
+      padding: 8px;
+      background-color: var(--bg-input);
+      border: 1px solid var(--border-input);
+      border-radius: 5px;
+      font-size: 1rem;
+      color: var(--text-main);
+    }
+
+    & .textarea {
+      width: 100%;
+      padding: 8px;
+      background-color: var(--bg-input);
+      border: 1px solid var(--border-input);
+      border-radius: 5px;
+      font-size: 1rem;
+      color: var(--text-main);
+      resize: none;
+    }
+
+    & .input-submit {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: var(--btn-bg-hover);
+      }
+    }
+
+    & .error {
+      border: 2px solid var(--text-error);
+    }
+  }
+}

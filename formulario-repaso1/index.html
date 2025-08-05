@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <header class="cabecera"> header </header>
+  <main class="cuerpo">
+    <h1 class="titulo-base">
+      Formulario repaso 1
+    </h1>
+    <form class="formulario-1" id="formulario" action="https://formspree.io/f/xjvowzqk" method="POST">
+      <label for="nombre">Nombre:</label>
+      <section class="containInput section_input_nombre">
+        <input class="input-text" type="text" id="nombre" name="nombre" required>
+      </section>
+      <label for="apellido">Apellido:</label>
+      <section class="containInput section_input_apellido">
+        <input class="input-text" type="text" id="apellido" name="apellido" required>
+      </section>
+      <label for="email">Email:</label>
+      <input class="input-text email" type="email" id="email" name="email" required>
+      <section class="containInput section_input_email">
+      </section>
+      <!-- textarea -->
+      <label for="mensaje">Mensaje:</label>
+      <section class="containInput section_input_mensaje">
+        <textarea class="textarea" id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+      </section>
+      <button class="input-submit" type="submit">Enviar</button>
+      <section class="msj_form_true"></section>
+    </form>
+  </main>
+  <footer class="pie"> foother </footer>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+/* Paleta basada en Tokyo Night Storm */
+:root {
+  --bg: #1a1b26;
+  --panel: #24283b;
+  --text: #c0caf5;
+  --accent: #7aa2f7;
+  --hover: #414868;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--panel);
+  border-bottom: 2px solid var(--hover);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+main {
+  padding: 2rem;
+}
+
+.grid-ejercicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--panel);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--hover);
+  transition: background 0.3s;
+}
+
+.card:hover {
+  background-color: var(--hover);
+  color: var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--panel);
+  border-top: 2px solid var(--hover);
+  font-size: 0.9rem;
+}
