@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <header class="cabecera"> header </header>
+  <main class="cuerpo">
+    <h1>ejercicio 3 - contacto</h1>
+    <form class="formulario-1" id="formulario">
+      <label for="nombre">Nombre:</label>
+      <section class="containInput section_input_nombre">
+        <input class="input-text" type="text" id="nombre" name="nombre" required>
+      </section>
+      <label for="apellido">Apellido:</label>
+      <section class="containInput section_input_apellido">
+        <input class="input-text" type="text" id="apellido" name="apellido" required>
+      </section>
+      <label for="email">Email:</label>
+      <section class="containInput section_input_email">
+        <input class="input-text email" type="email" id="email" name="email" required>
+      </section>
+      <label for="telefono">Teléfono:</label>
+      <section class="containInput section_input_telefono">
+        <input class="input-text telefono" type="tel" id="telefono" name="telefono" required>
+      </section>
+      <label for="edad">Edad:</label>
+      <section class="containInput section_input_edad">
+        <input class="input-text edad" type="number" id="edad" name="edad">
+      </section>
+      <label for="direccion">Direccion:</label>
+      <section class="containInput section_input_direccion">
+        <input class="input-text direccion" type="text" id="direccion" name="direccion">
+      </section>
+      <label for="provincia">provincia:</label>
+      <section class="containInput section_input_provincia">
+        <input list="provincias" class="input-text ciudad" type="text" id="provincia" name="provincia">
+        <datalist id="provincias">
+          <option value="Buenos Aires">
+          <option value="Rio Negro">
+          <option value="Catamarca">
+          <option value="Chaco">
+          <option value="Chubut">
+          <option value="Córdoba">
+          <option value="Corrientes">
+          <option value="Entre Ríos">
+          <option value="Formosa">
+          <option value="Jujuy">
+          <option value="La Pampa">
+          <option value="La Rioja">
+          <option value="Mendoza">
+          <option value="Misiones">
+          <option value="Neuquén">
+        </datalist>
+        <label for="metodo_contacto">Método de contacto:</label>
+        <section class="containInput section_input_metodo_contacto" id="metodo_contacto" name="metodo_contacto">
+          <section class="contain-input-radio">
+            <label for="email_contacto">Email</label>
+            <input type="checkbox" id="email_contacto" name="metodo_contacto" value="email" checked>
+          </section>
+          <section class="contain-input-radio">
+            <label for="telefono_contacto">Teléfono</label>
+            <input type="checkbox" id="telefono_contacto" name="metodo_contacto" value="telefono">
+          </section>
+          <section class="contain-input-radio">
+            <label for="whatsapp_contacto">WhatsApp</label>
+            <input type="checkbox" id="whatsapp_contacto" name="metodo_contacto" value="whatsapp">
+          </section>
+        </section>
+        </fildset>
+      </section>
+
+      <!-- textarea -->
+      <label for="mensaje">Mensaje:</label>
+      <section class="containInput section_input_mensaje">
+        <textarea class="textarea" id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+      </section>
+      <!-- <button class="input-submit" type="submit">Guardar</button> -->
+      <section class="msj_form_true"></section>
+    </form>
+
+    <section class="section_preview">
+      <h2>Tabla Preview</h2>
+      <table class="table_preview">
+        <thead class="table_head">
+          <tr>
+            <th class="campo">Campo</th>
+            <th class="preview">Valor</th>
+        </thead>
+        <tbody id="preview_body">
+          <tr>
+            <td>Nombre</td>
+            <td id="preview_nombre"></td>
+          </tr>
+          <tr>
+            <td>Apellido</td>
+            <td id="preview_apellido"></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td id="preview_email"></td>
+          </tr>
+          <tr>
+            <td>Teléfono</td>
+            <td id="preview_telefono"></td>
+          </tr>
+          <tr>
+            <td>Edad</td>
+            <td id="preview_edad"></td>
+          </tr>
+          <tr>
+            <td>Dirección</td>
+            <td id="preview_direccion"></td>
+          </tr>
+          <tr>
+            <td>Provincia</td>
+            <td id="preview_provincia"></td>
+          </tr>
+          <tr>
+            <td>Método de contacto</td>
+            <td id="preview_metodo_contacto"></td>
+          </tr>
+          <tr>
+            <td class="campo_fin">Mensaje</td>
+            <td class="preview_fin" id="preview_mensaje"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="input-submit" id="btn_preview">Guardar tabla</button>
+      <button class="input-submit" id="btn_reset">Reset</button>
+    </section>
+  </main>
+
+  <footer class="pie"> foother de pruebas</footer>
+</body>
+
+</html>
